@@ -1,0 +1,33 @@
+{
+  "name": "ibra-reddit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " cross-env NODE_ENV=production node server/",
+    "dev": "cross-env NODE_ENV=development nodemon ./server/",
+    "build": "cross-env NODE_ENV=production node server/database/build/command-build.js",
+    "build:dev": "cross-env NODE_ENV=development node server/database/build/command-build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G11/IbRa-Reddit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G11/IbRa-Reddit/issues"
+  },
+  "homepage": "https://github.com/GSG-G11/IbRa-Reddit#readme",
+  
+  "devDependencies": {
+    "compression": "^1.7.4",
+    "env2": "^2.2.2",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  }
+}
