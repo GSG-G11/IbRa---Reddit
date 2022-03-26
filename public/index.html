@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit - Slam head first into anything</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <img src="./img/reddit.png" alt="Reddit" />
+        <p class="name">reddit</p>
+      </div>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input class="search-input" type="text" placeholder="Search Reddit" />
+      </div>
+
+      <div class="header-tail">
+        <div class="speaker"></div>
+        <button class="header-btn login-btn">Log In</button>
+        <button class="header-btn register-btn">Sign Up</button>
+        <div class="icons">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-angle-down"></i></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="trending">
+        <h6>Trending today</h6>
+        <div class="trending-news">
+            <div class="news">
+                <img src="./img/5969eac6-767a-4e5d-971a-352d81f816e1.jpg" alt="">
+                <h4>The news is devastating</h4>
+            </div>
+            <div class="news">
+                <img src="./img/5969eac6-767a-4e5d-971a-352d81f816e1.jpg" alt="">
+                <h4>The news is devastating</h4>
+            </div>
+            <div class="news">
+                <img src="./img/5969eac6-767a-4e5d-971a-352d81f816e1.jpg" alt="">
+                <h4>The news is devastating</h4>
+            </div>
+            <div class="news">
+                <img src="./img/5969eac6-767a-4e5d-971a-352d81f816e1.jpg" alt="">
+                <h4>The news is devastating</h4>
+            </div>
+        </div>
+      </section>
+
+
+      <section class="main-cont">
+        <div class="left">  
+          <section class="popular">
+          <h6>popular posts</h6>
+          <div class="hot">
+            <button class="hot-icons"> <i class="fa-solid fa-fire"></i> HOT</button>
+            <button class="hot-icons"> EVERYWHERE <i class="fa-solid fa-angle-down"></i></button>
+            <button class="hot-icons"><i class="fa-solid fa-brightness"></i> NEW</button>
+            <button class="hot-icons"><i class="fa-solid fa-arrow-trend-up"></i> TOP</button>
+            <button class="hot-icons">...</button>
+            <button class="hot-icons"><i class="fa-solid fa-window-frame-open"></i> <i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          </section>
+          
+          <section class="posts">
+            <div class="post">
+              <div class="vote-sec" >
+                  <div class="vote">
+                    <i class="fa-solid fa-up"></i>
+                    <p>60k</p>
+                    <i class="fa-solid fa-down"></i>
+                  </div>
+              </div>
+              <div class="post-body">
+                        <div class="subUserReward">
+                            <img class="subImg" src="./img/reddit.png" alt="">
+                            <h6 class="sub">r/memes</h6>
+                            <h6 class="subTail">• Posted by u/Kahmoosha 20 hours ago </h6>
+                            <h6><i class="fas fa-award"></i> <i class="fa-solid fa-crown"></i></h6>
+                        </div>
+            <div class="postText">
+                <p>What's the most out of touch thing you've heard a person say?</p>
+            </div>
+                <div class="media"></div>
+                <div class="social">
+                    <button class="social-btn"> <i class="fa-regular fa-message"></i> 6.3k comments</button>
+                    <button class="social-btn"><i class="fa-thin fa-share"></i> Share</button>
+                    <button class="social-btn"> <i class="fa-regular fa-bookmark"></i> Save</button>
+                    <button class="social-btn">	• • • </button>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+              <div class="vote-sec" >
+                  <div class="vote">
+                    <i class="fa-solid fa-up"></i>
+                    <p>60k</p>
+                    <i class="fa-solid fa-down"></i>
+                  </div>
+              </div>
+              <div class="post-body">
+                        <div class="subUserReward">
+                            <img class="subImg" src="./img/reddit.png" alt="">
+                            <h6 class="sub">r/memes</h6>
+                            <h6 class="subTail">• Posted by u/Kahmoosha 20 hours ago </h6>
+                            <h6><i class="fas fa-award"></i> <i class="fa-solid fa-crown"></i></h6>
+                        </div>
+            <div class="postText">
+                <p>What's the most out of touch thing you've heard a person say?</p>
+            </div>
+                <div class="media">
+                    <img src="./img/Tumblr_l_1061587250446.jpg" alt="">
+                </div>
+                <div class="social">
+                    <button class="social-btn"> <i class="fa-regular fa-message"></i> 6.3k comments</button>
+                    <button class="social-btn"><i class="fa-thin fa-share"></i> Share</button>
+                    <button class="social-btn"> <i class="fa-regular fa-bookmark"></i> Save</button>
+                    <button class="social-btn">	• • • </button>
+                </div>
+              </div>
+            </div>
+         
+          </section>
+        </div>
+
+        <div class="right">
+
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function fontAwesome() {
+        const css = document.createElement("link");
+        css.href =
+          "https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      }
+      fontAwesome();
+    </script>
+  </body>
+</html>
