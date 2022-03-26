@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #dae0e6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header */
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  height: 50px;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  width: 7%;
+  justify-content: space-around;
+}
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+.search-bar {
+  padding-left: 10px;
+  width: 60%;
+  height: 70%;
+  background-color: #a9b3bd;
+  font-size: 1.1rem;
+  border-radius: 3px;
+}
+.search-bar:hover {
+  border: 1px solid #0079d3;
+}
+
+.search-input {
+  padding-left: 10px;
+  width: 90%;
+  height: 100%;
+  background-color: #a9b3bd;
+  border: none;
+  color: rgb(66, 64, 64);
+  font-size: 1rem;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+.search-input:focus {
+  outline: none;
+}
+.header-tail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+}
+.speaker {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.623);
+  border-radius: 50%;
+}
+.speaker:hover {
+  cursor: pointer;
+}
+.header-btn {
+  border: none;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 1.2rem;
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+.header-btn:hover {
+  cursor: pointer;
+}
+.login-btn {
+  border: 1px solid #0079d3;
+  color: #0079d3;
+}
+
+.register-btn {
+  background-color: #0079d3;
+  color: white;
+}
+.icons {
+  width: 40px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icons:hover {
+  cursor: pointer;
+}
+/* header ends */
+
+/* main */
+main {
+  background-color: #dae0e6;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.trending {
+  width: 100%;
+  background-color: azure;
+}
+
+.trending-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.news {
+  border-radius: 3px;
+  overflow: hidden;
+}
+.news img {
+  width: 250px;
+  position: relative;
+}
+.main-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.left {
+  width: 65%;
+  height: 100%;
+}
+.hot {
+  width: 100%;
+  height: 55px;
+  background-color: white;
+  border-radius: 2px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* .hot:nth-child(-n+5) {
+
+} */
+.hot button {
+  border: none;
+  padding: 0.5rem;
+  height: 2rem;
+  border-radius: 1.2rem;
+  color: #8f9293;
+  font-weight: bold;
+}
+.hot button:nth-child(-n + 2) {
+  color: #0079d3;
+  background-color: #f6f7f8;
+  padding: 0.5rem;
+  height: 2rem;
+  border-radius: 1.2rem;
+}
+
+.hot button:hover {
+  background-color: azure;
+  cursor: pointer;
+}
+
+.posts {
+  width: 100%;
+  background-color: #dae0e6;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.post {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  border: 1px solid #b3bbc4;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+}
+.vote-sec {
+  width: 5%;
+  background-color: #f8f9fa;
+}
+.vote { 
+  max-width: 100%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 80px;
+  background-color: #f8f9fa;
+}
+
+.post-body {
+  width: 95%;
+  background-color: white;
+}
+.subUserReward {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.subImg {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.sub {
+  color: black;
+}
+.subTail {
+  color: grey;
+}
+
+.postText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.postText p {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.media {
+  width: 99%;
+  margin-top: 0.7rem;
+  background-color: white;
+  margin: 0 auto;
+}
+.media img {
+  width: 100%;
+  
+}
+.social{ 
+  background-color: white;
+  height: 34%;
+}
+.social-btn {
+  border: none;
+  padding: 0.5rem;
+  height: 2rem;
+  font-weight: bold;
+  background: none;
+  border-radius: 2px;
+  margin-left: 0.3rem;
+}
+.social-btn:hover {
+  background-color: #dae0e6;
+}
+
+.right {
+  width: 5rem;
+  border: 1px solid black;
+}
