@@ -1,12 +1,16 @@
 
 const express = require('express');
-const router = require('./routes');
 require('env2')('.env');
+const init = require('./init');
+
 
 const app = express();
 
-router(app);
+init(app);
 
-app.set('port', process.env.PORT || 9000);
+
+app.set('port', process.env.PORT || 5000);
+
+
 
 module.exports = app;
