@@ -1,14 +1,9 @@
 const Joi = require('joi');
 const loginValedationSchema = Joi.object({
-    email: Joi.string().email({
-        minDomainSegments: 2,
-        tlds: { allow: ["com", "net"] },
-      }),
-      password: Joi.string()
-        .pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)
-        .min(6)
-        .required(),
+    email: Joi.string().email().required(),
+      password: Joi.string().min(8).required(),
 })
 
+const loginSchema = (dataObj) => loginValedationSchema.validateAsync(dataObj, { abortEarly: false })
 
-module.exports = loginValedationSchema;
+module.exports = loginSchema;
