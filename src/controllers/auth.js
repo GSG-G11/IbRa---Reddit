@@ -29,12 +29,10 @@ const createUser = (req, res) => {
     })
     .then((data) => {
       const id = data.rows[0].id;
-      console.log(data.rows[0].id, 1235);
       jwt.sign({ id, name, email }, SECERT_KEY, (err, token) => {
         if (err) {
           throw new Error("server error");
         } else {
-          console.log(token);
           return res
             .cookie("ibraToken", token, { secure: true })
             .status(201)
@@ -42,7 +40,6 @@ const createUser = (req, res) => {
         }
       });
     })
-    .then((data) => console.log(data, 22))
     .catch((err) => {
       if (err.message === "Email already exists") {
         return res.json({

@@ -4,15 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reddit | Register</title>
+    <title>login</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/registerStyle.css" />
   </head>
   <body>
-    <form id="register-form">
-      <label for="userName">User Name: <input id="userName" placeholder="inter your user name" type="text" /></label>
-      <label for="email">Email: <input id="email" placeholder="Inter your email" type="email" /></label>
-      <label for="password">Password: <input id="password" placeholder="Inter your password" type="password" /></label>
-      <label for="confirm-password">Confirm Password: <input id="confirm-password" placeholder="confirm password" type="password" /></label>
-      
+    <form id="form">
+      <div class="login-img">
+        <img src="./img/login-img.png" alt="" />
+      </div>
+      <div class="form-body">
+        <h1 class="header">Sign Up</h1>
+        <div>
+          <div class="login-opt">
+            <button>
+              continue with Google <i class="fa-brands fa-google"></i>
+            </button>
+            <button>
+              continue with Apple <i class="fa-brands fa-apple"></i>
+            </button>
+          </div>
+          <div class="hr">
+            <p class="or">OR</p>
+          </div>
+          <!--  -->
+          <div class="inputs">
+            <div class="input-box">
+              <input id="email" type="text" placeholder=" EMAIL" />
+              <p class="error email-error-messsage"></p>
+            </div>
+            <div class="input-box">
+              <input id="username" type="text" placeholder=" usernmae" />
+              <p class="error userName-error-messsage"></p>
+            </div>
+            <div class="input-box">
+              <input id="password" type="password" placeholder=" PASSWORD" />
+              <p class="error password-error-messsage"></p>
+            </div>
+            <div class="input-box">
+              <input id="checkPassword" type="password" placeholder=" CONFIRM PASSWORD" />
+              <p class="error password-error-messsage"></p>
+            </div>
+          </div>
+          <button id="login" type="submit">Sign Up</button>
+        </div>
+        <p class="no-account">Already a redditor? <a href="/login">Log In</a></p>
+      </div>
     </form>
+
+    <script>
+      function fontAwesome() {
+        const css = document.createElement("link");
+        css.href =
+          "https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      }
+      fontAwesome();
+    </script>
   </body>
 </html>

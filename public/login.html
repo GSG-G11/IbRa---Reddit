@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
-</head>
-<body>
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="./css/loginStyle.css">
+  </head>
+  <body>
     <form id="form">
-        <h1 class="header">Log In</h1>
-        <div class="input-box">
-          <label for="email">Email: </label>
-          <input id="email" type="text" placeholder="Enter Email" />
-          <p class="error email-error-messsage"></p>
+      <div class="login-img">
+        <img src="./img/login-img.png" alt="">
+      </div>
+      <div class="form-body">
+      <h1 class="header">Log In</h1>
+      <div>
+        <div class="login-opt">
+          <button>continue with Google <i class="fa-brands fa-google"></i></button>
+          <button>continue with Apple <i class="fa-brands fa-apple"></i></button>
         </div>
-        <div class="input-box">
-          <label for="password">Password: </label>
-          <input id="password" type="password" placeholder="Enter Password" />
-          <p class="error password-error-messsage"></p>
-        </div>
-  
-        <input id="login" value="Submit" type="submit" />
-        <p class="no-account">
-          "Don't have an account yet? " <a href="/register">Sign Up</a>
-        </p>
-      </form>
-  
-    
+        <div class="hr">
+        <p class="or">OR</p>
+      </div>
+        <!--  -->
+        <div class="inputs">
+      <div class="input-box">
+        <input id="email" type="text" placeholder=" EMAIL" />
+        <p class="error email-error-messsage"></p>
+      </div>
+      <div class="input-box">
+        
+        <input id="password" type="password" placeholder=" PASSWORD" />
+        <p class="error password-error-messsage"></p>
+      </div>
+    </div>
+      <button id="login"  type="submit" >Log In</button>
+    </div>
+      <p class="no-account">
+        New to Reddit?  <a href="/register">SIGN UP</a>
+      </p>
+    </div>
+    </form>
 
-      <script src="./js/fetchLogin.js"></script>
-</body>
+    <script>
+      function fontAwesome() {
+        const css = document.createElement("link");
+        css.href =
+          "https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      }
+      fontAwesome();
+    </script>
+  </body>
 </html>
