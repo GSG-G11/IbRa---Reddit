@@ -13,11 +13,11 @@ const login = (req, res) => {
     .then(() => checkIfEmailAlreadyExistsQuery(email))
     .then((data) => {
       id = data.rows[0].id;
+      console.log(id)
       if (data.rowCount === 0) {
         throw cutomizedError(400, "Email does not exist");
       } else {
         const hashPassword = data.rows[0].password;
-        console.log(hashPassword);
         return compare(password, hashPassword);
       }
     })
@@ -27,9 +27,9 @@ const login = (req, res) => {
           if (err) {
             throw new Error("server error");
           } else {
-            console.log(token);
+            console.log(token, 55);
             return res
-              .cookie("ibraToken", token, { secure: true })
+              .cookie("accessToken", token, { secure: true })
               .status(201)
               .json({ message: "user registerd successfully" });
           }
@@ -38,25 +38,18 @@ const login = (req, res) => {
         throw cutomizedError(400, "Worng passowrd");
       }
     })
-    .catch((err) => {
-        console.log(err.message)
-      if (err.message === "Worng passowrd") {
-        return res.status(400).json({ message: "invalid password habibi" });
-      }
-      if (err.message === "Email does not exist") {
-        return res.json({
-          status: err.status,
-          message: "Email does not exist",
-        });
-      }
-
-      //   if (err.message == "ValidationError") {
-      //     return res.json({
-      //       status: 500,
-      //       message: "ValidationError",
-      //     });
-      //   }
-    });
+    // .catch((err) => {
+    //   console.log(err.message);
+    //   if (err.message === "Worng passowrd") {
+    //     return res.status(400).json({ message: "invalid password habibi" });
+    //   }
+    //   if (err.message === "Email does not exist") {
+    //     return res.json({
+    //       status: err.status,
+    //       message: "Email does not exist",
+    //     });
+    //   }
+    // });
 };
 
 module.exports = login;

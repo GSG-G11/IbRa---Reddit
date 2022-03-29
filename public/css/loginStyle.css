@@ -111,7 +111,11 @@ body {
 }
 .inputs{
     margin-top: 2rem;
-    height: 6rem;
+    height: 8rem;
+}
+.error {
+  font-size: 0.8rem;
+  color: #ff2900;
 }
 .no-account {
     font-size: 0.8rem

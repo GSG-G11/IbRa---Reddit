@@ -37,16 +37,16 @@
               <p class="error email-error-messsage"></p>
             </div>
             <div class="input-box">
-              <input id="username" type="text" placeholder=" usernmae" />
-              <p class="error userName-error-messsage"></p>
+              <input id="username" type="text" placeholder=" username" />
+              <p class="error name-error-messsage" id="name-error-messsage"></p>
             </div>
             <div class="input-box">
               <input id="password" type="password" placeholder=" PASSWORD" />
-              <p class="error password-error-messsage"></p>
+              <p class="error password-error-messsage" id="password-error-messsage"></p>
             </div>
             <div class="input-box">
               <input id="checkPassword" type="password" placeholder=" CONFIRM PASSWORD" />
-              <p class="error password-error-messsage"></p>
+              <p class="error confPassword-error-messsage" id="confPassword-error-messsage"></p>
             </div>
           </div>
           <button id="login" type="submit">Sign Up</button>
@@ -55,6 +55,7 @@
       </div>
     </form>
 
+    <script src="./js/fetchRegister.js"></script>
     <script>
       function fontAwesome() {
         const css = document.createElement("link");

@@ -34,7 +34,7 @@ const createUser = (req, res) => {
           throw new Error("server error");
         } else {
           return res
-            .cookie("ibraToken", token, { secure: true })
+            .cookie("accessToken", token, { secure: true })
             .status(201)
             .json({ message: "user registerd successfully" });
         }

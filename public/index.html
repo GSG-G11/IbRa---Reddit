@@ -71,7 +71,7 @@
           </div>
           </section>
           
-          <section class="posts">
+          <section id="posts" class="posts">
             <div class="post">
               <div class="vote-sec" >
                   <div class="vote">
@@ -99,7 +99,10 @@
                 </div>
               </div>
             </div>
+
+
             <div class="post">
+
               <div class="vote-sec" >
                   <div class="vote">
                     <i class="fa-solid fa-up"></i>
@@ -107,6 +110,8 @@
                     <i class="fa-solid fa-down"></i>
                   </div>
               </div>
+
+
               <div class="post-body">
                         <div class="subUserReward">
                             <img class="subImg" src="./img/reddit.png" alt="">
@@ -120,11 +125,12 @@
                 <div class="media">
                     <img src="./img/Tumblr_l_1061587250446.jpg" alt="">
                 </div>
+
                 <div class="social">
-                    <button class="social-btn"> <i class="fa-regular fa-message"></i> 6.3k comments</button>
-                    <button class="social-btn"><i class="fa-thin fa-share"></i> Share</button>
-                    <button class="social-btn"> <i class="fa-regular fa-bookmark"></i> Save</button>
-                    <button class="social-btn">	• • • </button>
+                    <button class="social-btn socialBtncomm"> <i class="fa-regular fa-message"></i> 6.3k comments</button>
+                    <button class="social-btn socialBtnShare"><i class="fa-thin fa-share"></i> Share</button>
+                    <button class="social-btn socialBtnSave"> <i class="fa-regular fa-bookmark"></i> Save</button>
+                    <button class="social-btn socialBtnDots">	• • • </button>
                 </div>
               </div>
             </div>
@@ -138,6 +144,7 @@
       </section>
     </main>
 
+    <script src="./js/index.js"></script>
     <script>
       function fontAwesome() {
         const css = document.createElement("link");
