@@ -86,6 +86,10 @@ body {
   border-radius: 3px;
   
 }
+.error {
+  font-size: 0.8rem;
+  color: #ff2900;
+}
 ::placeholder {
   font-size: 0.7rem;
   font-weight: bold;
@@ -111,7 +115,7 @@ body {
 }
 .inputs{
     margin-top: 2rem;
-    height: 12rem;
+    height: 15rem;
 }
 .no-account {
     font-size: 0.8rem
@@ -139,5 +143,4 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 0.9rem;
-  
 }
