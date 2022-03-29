@@ -30,12 +30,12 @@
         <div class="inputs">
       <div class="input-box">
         <input id="email" type="text" placeholder=" EMAIL" />
-        <p class="error email-error-messsage"></p>
+        <p class="email-error-messsage error"></p>
       </div>
       <div class="input-box">
         
         <input id="password" type="password" placeholder=" PASSWORD" />
-        <p class="error password-error-messsage"></p>
+        <p id="pass-error" class="error-messsage-password error"></p>
       </div>
     </div>
       <button id="login"  type="submit" >Log In</button>
@@ -45,7 +45,7 @@
       </p>
     </div>
     </form>
-
+    <script src="./js/loginFetch.js"></script>
     <script>
       function fontAwesome() {
         const css = document.createElement("link");
