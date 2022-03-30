@@ -3,7 +3,7 @@ const { generateToken, checkToken } = require("./generateToken");
 const createUser = require("./auth");
 const login = require("./login");
 const getPosts = require("./getAllPosts");
-const addPost = require("./addPosts")
+const addPost = require("./addPost")
 
 module.exports = {
   comparePasswordWithHashed,

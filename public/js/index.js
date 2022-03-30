@@ -1,4 +1,4 @@
-const signup = () => {
+const fetchPosts = () => {
   const request = {
     method: "GET",
   };
@@ -105,8 +105,12 @@ const createPost = (array) => {
     social.appendChild(socialBtnShare);
 
     const socialBtnSave = createElement("button", "social-btn");
-    const fsBookMark = createElement("i", "fa-regular");
-    fsBookMark.classList.add("fa-bookmark");
+    // const fsBookMark = createElement("i", "fa-regular");
+    // fsBookMark.classList.add("fa-bookmark");
+
+    const fsBookMark = document.createElement("i");
+    fsBookMark.classList.add("fa-regular", "fa-bookmark");
+
     socialBtnSave.appendChild(fsBookMark);
     socialBtnSave.textContent = "Save";
     social.appendChild(socialBtnSave);
@@ -125,5 +129,5 @@ const createPost = (array) => {
   count++
 };
 
-signup();
+fetchPosts();
 

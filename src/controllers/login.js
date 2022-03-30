@@ -38,18 +38,18 @@ const login = (req, res) => {
         throw cutomizedError(400, "Worng passowrd");
       }
     })
-    // .catch((err) => {
-    //   console.log(err.message);
-    //   if (err.message === "Worng passowrd") {
-    //     return res.status(400).json({ message: "invalid password habibi" });
-    //   }
-    //   if (err.message === "Email does not exist") {
-    //     return res.json({
-    //       status: err.status,
-    //       message: "Email does not exist",
-    //     });
-    //   }
-    // });
+    .catch((err) => {
+      console.log(err.message);
+      if (err.message === "Worng passowrd") {
+        return res.status(400).json({ message: "invalid password" });
+      }
+      if (err.message === "Email does not exist") {
+        return res.json({
+          status: err.status,
+          message: "Email does not exist",
+        });
+      }
+    });
 };
 
 module.exports = login;
