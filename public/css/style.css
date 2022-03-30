@@ -281,6 +281,40 @@ main {
 }
 
 .right {
-  width: 5rem;
-  border: 1px solid black;
+  width:30%;
+  /* border: 1px solid black; */
+}
+
+#post-form{
+  width: 30%;
+}
+
+.postP{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#media, #content {
+  margin-top: 0.3rem;
+  padding-left: 0.5rem;
+  width: 15rem;
+  height: 2.3rem;
+  background-color: #dae0e6;
+  border: none;
+  font-family: monospace;
+  background-color: #fcfcfb;
+  border: 1px solid #b3bbc4;
+  border-radius: 3px;
+}
+
+.addpostbtn{
+  border: none;
+  width: 15rem;
+  padding: 0.5rem;
+  height: 2.4rem;
+  border-radius: 1.2rem;
+  font-weight: bold;
+  background-color: #0079d3;
+  color: white;
+  border: 1px solid #dae0e6;
 }

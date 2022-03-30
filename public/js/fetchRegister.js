@@ -63,16 +63,16 @@ const signup = () => {
     }),
     headers: { "Content-Type": "application/json" },
   };
-  return fetch("/home", request)
+  return fetch("/signup", request)
     .then((result) => result.json())
     .then((res) => {
         console.log(res)
-        window.location.href = "/posts";
+        window.location.href = "/";
     });
 };
 
 registerBtn.addEventListener("click", (e) => {
-    console.log(email.value)
+    
 
   e.preventDefault();
   signup();

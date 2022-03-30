@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit - Slam head first into anything</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <img src="./img/reddit.png" alt="Reddit" />
+        <p class="name">reddit</p>
+      </div>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input class="search-input" type="text" placeholder="Search Reddit" />
+      </div>
+
+      <div class="header-tail">
+        <div class="speaker"></div>
+        <button class="header-btn login-btn">profile</button>
+        <p class="username">Wellcome </p>
+        <div class="icons">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-angle-down"></i></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-cont">
+        <div class="left">  
+          <section class="popular">
+          <h6>popular posts</h6>
+          <div class="hot">
+            <button class="hot-icons"> <i class="fa-solid fa-fire"></i> HOT</button>
+            <button class="hot-icons"> EVERYWHERE <i class="fa-solid fa-angle-down"></i></button>
+            <button class="hot-icons"><i class="fa-solid fa-brightness"></i> NEW</button>
+            <button class="hot-icons"><i class="fa-solid fa-arrow-trend-up"></i> TOP</button>
+            <button class="hot-icons">...</button>
+            <button class="hot-icons"><i class="fa-solid fa-window-frame-open"></i> <i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          </section>
+          
+          <section id="posts" class="posts">
+         
+          </section>
+        </div>
+
+        <div class="right">
+            <p class="postP">Add Post</p>
+          <form id= "post-form">
+            <input id="content" class="content" type="text">
+
+            <input id="media" class="media" type="url">
+
+            <input type="submit" class="addpostbtn" id="subtn" value="Add Post" />
+          </form>
+
+        </div>
+      </section>
+    </main>
+
+    
+    <script src="./js/fetchPostHome.js"></script>
+    <script>
+      function fontAwesome() {
+        const css = document.createElement("link");
+        css.href =
+          "https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      }
+      fontAwesome();
+    </script>
+  </body>
+</html>

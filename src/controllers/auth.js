@@ -28,13 +28,15 @@ const createUser = (req, res) => {
       return RegisterUserQuery(name, email, image, hashPassword);
     })
     .then((data) => {
-      const id = data.rows[0].id;
+      console.log(data.rows[0])
+      let id = data.rows[0].id;
       jwt.sign({ id, name, email }, SECERT_KEY, (err, token) => {
         if (err) {
           throw new Error("server error");
         } else {
+          console.log(token)
           return res
-            .cookie("accessToken", token, { secure: true })
+            .cookie("accessToken", token, { secure: true, httpOnly: true })
             .status(201)
             .json({ message: "user registerd successfully" });
         }
